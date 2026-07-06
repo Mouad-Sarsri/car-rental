@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS migrations (
+    id INT NOT NULL AUTO_INCREMENT,
+    filename VARCHAR(255) NOT NULL,
+    executed_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_migration_file (filename)
+) ENGINE=InnoDB;

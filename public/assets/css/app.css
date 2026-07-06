@@ -1,0 +1,104 @@
+/* ── Variables ───────────────────────────────────────── */
+:root {
+    --cr-yellow: #FFC107;
+    --cr-dark:   #212529;
+}
+
+/* ── Global ──────────────────────────────────────────── */
+body { background-color: #f8f9fa; }
+
+a { color: var(--cr-yellow); }
+a:hover { color: #e0a800; }
+
+/* ── Navbar ──────────────────────────────────────────── */
+.avatar-circle {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ── Car cards ───────────────────────────────────────── */
+.car-card { transition: transform .15s, box-shadow .15s; }
+.car-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.12) !important; }
+
+.car-img-wrapper {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.car-img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+.car-img-placeholder {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 100%;
+}
+
+/* ── Tables ──────────────────────────────────────────── */
+.table thead th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+
+/* ── Badges ──────────────────────────────────────────── */
+.badge { font-weight: 500; }
+
+/* ── Forms ───────────────────────────────────────────── */
+.form-control:focus, .form-select:focus {
+    border-color: var(--cr-yellow);
+    box-shadow: 0 0 0 .2rem rgba(255,193,7,.25);
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+.btn-warning { color: #000; }
+.btn-warning:hover { color: #000; }
+
+/* ── Cards ───────────────────────────────────────────── */
+.card { border: none; }
+
+/* ── Avatar small ─────────────────────────────────────── */
+.avatar-sm {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: #6c757d;
+    color: #fff;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ── Stat cards hover ─────────────────────────────────── */
+.card a.card:hover { background-color: #fffbf0; border-color: var(--cr-yellow); }
+
+/* ── Hero ───────────────────────────────────────────── */
+.hero-section { min-height: 520px; padding: 0; }
+.min-vh-60    { min-height: 60vh; }
+
+/* ── Car cards ───────────────────────────────────────── */
+.car-img-wrapper { height: 200px; overflow:hidden; background:#f8f9fa; display:flex; align-items:center; justify-content:center; }
+.car-img         { width:100%; height:100%; object-fit:cover; transition:transform .4s; }
+.car-card:hover .car-img { transform:scale(1.05); }
+.car-img-placeholder { display:flex; align-items:center; justify-content:center; width:100%; height:100%; background: linear-gradient(135deg,#1a1a2e,#16213e); }
+
+/* ── Hover lift ──────────────────────────────────────── */
+.hover-lift { transition: transform .2s, box-shadow .2s; }
+.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.12) !important; }
+
+/* ── Navbar actif ────────────────────────────────────── */
+.navbar .nav-link.active { background:rgba(255,193,7,.15); color:#FFC107 !important; }
+.navbar .nav-link        { transition: background .2s, color .2s; }
+.navbar .nav-link:hover  { background:rgba(255,255,255,.08); }
+
+/* ── Avatar navbar ───────────────────────────────────── */
+.avatar-sm { width:32px; height:32px; border-radius:50%; background:#FFC107; color:#000; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
+
+/* ── Upload preview ──────────────────────────────────── */
+#photoPreview { max-height:180px; object-fit:cover; border-radius:8px; }
+
+/* ── Contact accordion ───────────────────────────────── */
+.accordion-button:focus { box-shadow: none; }
+
+
